@@ -29,7 +29,7 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 
-    background(255, 0, 166);
+    background(255, 186, 249);
 
   if (dist(mouseX, mouseY, circleX, circleY) < circleDiameter/2) {
     //mouse is inside the circle
@@ -78,7 +78,7 @@ public class Sketch extends PApplet {
         } 
       } 
       else {
-        background(255, 0, 166);
+        background(255, 186, 249);
     }
   }
 }

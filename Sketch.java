@@ -36,14 +36,14 @@ public class Sketch extends PApplet {
 
     if (mousePressed) {
       //mouse is inside the circle and clicked
-      //color it bright red and move the circle
-      fill(255, 25, 0);
+      //color it grey and move the circle
+      fill(156);
       circleX = mouseX;
       circleY = mouseY;
     } else {
       //mouse is inside the circle but not clicked
-      //highlight the circle light green but don't move it
-      fill(128, 256, 128);
+      //highlight the circle white but don't move it
+      fill(255);
     }
     } else {
     //mouse is outside the circle, color it black

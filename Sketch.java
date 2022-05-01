@@ -21,7 +21,7 @@ public class Sketch extends PApplet {
   public void setup() {
     circleX = width;
     circleY = height;
-    circleDiameter = 100;
+    circleDiameter = 120;
   }
 
   /**
@@ -34,6 +34,7 @@ public class Sketch extends PApplet {
   if (dist(mouseX, mouseY, circleX, circleY) < circleDiameter/2) {
     //mouse is inside the circle
 
+    // mouse pressed commands
     if (mousePressed) {
       //mouse is inside the circle and clicked
       //color it grey and move the circle
@@ -54,6 +55,7 @@ public class Sketch extends PApplet {
 }
   public void keyPressed() {
 
+    // key pressed commands. colours the background accordingly with colours in a rainbow from the first letter of the colour the user presses
     if (keyPressed) {
 
         if (key == 'r') {

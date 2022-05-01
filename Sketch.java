@@ -76,7 +76,7 @@ public class Sketch extends PApplet {
         } 
       } 
       else {
-        background(32);
+        background(255, 0, 166);
     }
   }
 }

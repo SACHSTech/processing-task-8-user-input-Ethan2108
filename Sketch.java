@@ -29,7 +29,7 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 
-    background(21, 69, 218);
+    background(255, 0, 166);
 
   if (dist(mouseX, mouseY, circleX, circleY) < circleDiameter/2) {
     //mouse is inside the circle
@@ -51,4 +51,32 @@ public class Sketch extends PApplet {
   }
 
   ellipse(circleX, circleY, circleDiameter, circleDiameter);
-}}
+}
+  public void keyPressed() {
+
+    if (keyPressed) {
+
+        if (key == 'r') {
+          background(255, 0, 0);
+        } 
+        else if (key == 'o') {
+          background(255, 128, 0);
+        } 
+        else if (key == 'y') {
+          background(246, 255, 0);
+        } 
+        else if (key == 'g') {
+          background(0, 255, 0);
+        } 
+        else if (key == 'b') {
+          background(0, 0, 255);
+        }
+        else if (key == 'p') {
+          background(170, 0, 255);
+        } 
+      } 
+      else {
+        background(32);
+    }
+  }
+}

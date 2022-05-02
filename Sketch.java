@@ -36,16 +36,19 @@ public class Sketch extends PApplet {
 
     // mouse pressed commands
     if (mousePressed) {
-      //mouse is inside the circle and clicked
-      //color it grey and move the circle
+      // mouse is inside the circle and clicked
+      // color it grey and move the circle
       fill(156);
       circleX = mouseX;
       circleY = mouseY;
+
     } 
     else {
-      //mouse is inside the circle but not clicked
-      //highlight the circle white but don't move it
-      fill(255);
+      // mouse is inside the circle but not clicked
+      // highlight the circle white without moving it
+      mouseClicked(); {
+        fill(255, 255, 255);
+  }
     }}
     else {
     //mouse is outside the circle, color it black
@@ -54,7 +57,8 @@ public class Sketch extends PApplet {
 
   ellipse(circleX, circleY, circleDiameter, circleDiameter);
 }
-  public void keyPressed() {
+
+    public void keyPressed() {
 
     // key pressed commands. colours the background accordingly with colours in a rainbow from the first letter of the colour the user presses
     if (keyPressed) {

@@ -11,7 +11,7 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
   /** 
@@ -36,28 +36,26 @@ public class Sketch extends PApplet {
 
     // mouse pressed commands
     if (mousePressed) {
-      // mouse is inside the circle and clicked
-      // color it grey and move the circle
+      // mouse is inside the circle and clicked. color it grey and move the circle
       fill(156);
       circleX = mouseX;
       circleY = mouseY;
 
     } 
     else {
-      // mouse is inside the circle but not clicked
-      // highlight the circle white without moving it
+      // mouse is inside the circle but not clicked. highlight the circle white without moving it
       mouseClicked(); {
         fill(255);
   }
     }}
     else {
-    //mouse is outside the circle, color it black
+    // colors the circle black when the mouse is outside of the circle
     fill(0);
   }
 
   ellipse(circleX, circleY, circleDiameter, circleDiameter);
 }
-
+    // Key code commands to move the circle up, down, left or right 
     public void keyPressed() {
       if (keyCode == UP){
         circleY--;

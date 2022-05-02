@@ -47,7 +47,7 @@ public class Sketch extends PApplet {
       // mouse is inside the circle but not clicked
       // highlight the circle white without moving it
       mouseClicked(); {
-        fill(255, 255, 255);
+        fill(255);
   }
     }}
     else {
@@ -59,7 +59,18 @@ public class Sketch extends PApplet {
 }
 
     public void keyPressed() {
-
+      if (keyCode == UP){
+        circleY--;
+      }
+      else if (keyCode == DOWN){
+        circleY++;
+      }
+      else if (keyCode == LEFT){
+        circleX--;
+      }
+      else if (keyCode == RIGHT){
+        circleX++;
+      }
     // key pressed commands. colours the background accordingly with colours in a rainbow from the first letter of the colour the user presses
     if (keyPressed) {
 
@@ -83,6 +94,7 @@ public class Sketch extends PApplet {
         } 
       } 
       else {
+        keyReleased();
         background(255, 186, 249);
     }
   }

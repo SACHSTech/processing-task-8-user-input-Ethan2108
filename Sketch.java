@@ -21,7 +21,7 @@ public class Sketch extends PApplet {
   public void setup() {
     circleX = width;
     circleY = height;
-    circleDiameter = 120;
+    circleDiameter = 200;
   }
 
   /**
